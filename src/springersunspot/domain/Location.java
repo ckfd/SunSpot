@@ -1,8 +1,8 @@
 package net.room32.springersunspot.domain;
 
 public class Location implements Comparable<Location> {
-    int row, column;
-    int solarActivityScore;
+    private int row, column;
+    private int solarActivityScore;
 
     public Location(int row, int column, int solarActivityScore) {
         this.row = row;
