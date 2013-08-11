@@ -14,7 +14,7 @@ public class Grid {
     }
 
     public List<Location> getTopLocations(int numberOfResultsRequested) {
-       List<Location> locations = new ArrayList<Location>(sz*sz);
+       List<Location> locations = new ArrayList<>(sz*sz);
 
         for (int row = 0; row < sz; row++) {
             for (int column = 0; column < sz; column++) {
@@ -28,23 +28,23 @@ public class Grid {
     }
 
     public int getSolarActivityScoreFor(int row, int column) {
-        int bottomrow = sz - 1;
-        int rightMostColum = sz - 1;
+        int bottomRow = sz - 1;
+        int rightMostColumn = sz - 1;
 
         int score = getHeatValueFor(row, column);
         if (row > 0) score += getHeatValueFor(row - 1, column);
-        if (row < bottomrow) score += getHeatValueFor(row + 1, column);
+        if (row < bottomRow) score += getHeatValueFor(row + 1, column);
 
         if (column > 0) {
             score += getHeatValueFor(row, column - 1);
             if (row > 0) score += getHeatValueFor(row - 1, column - 1);
-            if (row < bottomrow) score += getHeatValueFor(row + 1, column - 1);
+            if (row < bottomRow) score += getHeatValueFor(row + 1, column - 1);
         }
 
-        if (column < rightMostColum) {
+        if (column < rightMostColumn) {
             score += getHeatValueFor(row, column + 1);
             if (row > 0) score += getHeatValueFor(row - 1, column + 1);
-            if (row < bottomrow) score += getHeatValueFor(row + 1, column + 1);
+            if (row < bottomRow) score += getHeatValueFor(row + 1, column + 1);
         }
 
         return score;
