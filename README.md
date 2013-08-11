@@ -1,4 +1,8 @@
-Christian Johnsen - Java implementation of the Springer Sun Spot Analyser Test 
+Hello there, 
+
+So this is my Java solution to the 'Sun Spot Analyser' test.  I am looking forward to go over it with you and explain how the code grew and evolved and got refactored into its current state! 
+
+All the best, Christian Johnsen
 
 src/springersunspot/SunSpotAnalyser.java
 src/springersunspot/domain/Grid.java
