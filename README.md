@@ -4,13 +4,23 @@ So this is my Java solution to the 'Sun Spot Analyser' test.  I am looking forwa
 
 All the best, Christian Johnsen
 
+_________________________________
+
 src/springersunspot/SunSpotAnalyser.java
+
 src/springersunspot/domain/Grid.java
+
 src/springersunspot/domain/Location.java
 
+_
+
 test/springersunspot/SunSpotAnalyserTest.java
+
 test/springersunspot/domain/HeatValueGridTest.java
+
 test/springersunspot/domain/LocationComparatorTest.java
+
 test/springersunspot/domain/SolarActivityScoreGridTest.java
+
 test/springersunspot/domain/TopLocationsGridTest.java
 
