@@ -8,8 +8,7 @@ public class SunSpotAnalyser {
 
     private int numberOfResultsRequested;
     private int gridSize;
-    int[] gridData;
-
+    private int[] gridData;
 
     public String analyse(String input) {
 
